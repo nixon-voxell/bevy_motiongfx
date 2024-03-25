@@ -31,8 +31,6 @@ pub struct VelloBezPath {
 
 impl VelloBezPath {
     pub fn new(path: kurbo::BezPath) -> Self {
-        let path: kurbo::BezPath = path.into();
-
         Self {
             origin_path: path.clone(),
             path,

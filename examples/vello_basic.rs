@@ -66,8 +66,8 @@ fn vello_basic(mut commands: Commands, mut scenes: ResMut<Assets<VelloScene>>) {
     // Sequence
     let sequence = flow(
         0.5,
+        // Line animation
         &[
-            // Line animation
             chain(&[
                 all(&[
                     commands.play(

@@ -36,8 +36,6 @@ impl VelloLine {
     }
 
     pub fn origin_to(to: DVec2) -> Self {
-        let to: DVec2 = to.into();
-
         Self {
             line: kurbo::Line::new(kurbo::Point::default(), kurbo::Point::new(to.x, to.y)),
             ..default()

@@ -3125,6 +3125,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "motiongfx_macro_utils"
+version = "0.1.0"
+dependencies = [
+ "quote",
+ "syn 2.0.46",
+]
+
+[[package]]
 name = "motiongfx_typst"
 version = "0.1.0"
 dependencies = [
@@ -3142,12 +3150,21 @@ dependencies = [
  "flate2",
  "fontdb 0.16.0",
  "motiongfx_core",
+ "motiongfx_typst_macros",
  "motiongfx_vello",
  "parking_lot",
  "tar",
  "typst",
  "typst-svg",
  "ureq",
+]
+
+[[package]]
+name = "motiongfx_typst_macros"
+version = "0.1.0"
+dependencies = [
+ "quote",
+ "syn 2.0.46",
 ]
 
 [[package]]
@@ -3175,6 +3192,7 @@ dependencies = [
 name = "motiongfx_vello_macros"
 version = "0.1.0"
 dependencies = [
+ "motiongfx_macro_utils",
  "quote",
  "syn 2.0.46",
 ]

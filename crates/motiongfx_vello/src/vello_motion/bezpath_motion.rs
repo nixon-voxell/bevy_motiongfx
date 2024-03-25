@@ -79,8 +79,7 @@ impl VelloBezPathMotion {
         let mut most_recent_initial = kurbo::Point::new(0.0, 0.0);
         let mut most_recent_point = kurbo::Point::new(0.0, 0.0);
 
-        let mut path_index = 0;
-        for origin_pathel in origin_pathels {
+        for (path_index, origin_pathel) in origin_pathels.iter().enumerate() {
             let mut interp_value = trace_raw - path_index as f32;
 
             if interp_value <= 0.0 {
@@ -126,8 +125,6 @@ impl VelloBezPathMotion {
                     }
                 }
             }
-
-            path_index += 1;
         }
 
         vello_path.set_built(false);

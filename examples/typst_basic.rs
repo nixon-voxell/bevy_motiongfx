@@ -27,9 +27,7 @@ fn typst_basic(
         r###"
         #set page(width: 1120pt, margin: 8pt)
         #set raw(theme: "themes/Monokai Pro.tmTheme")
-        #set text(size: 24pt, font: "consolas", fill: rgb("#FCFCFA"))
-
-        #show raw: set text(font: "Consolas")
+        #set text(size: 24pt, fill: rgb("#FCFCFA"))
 
         #box()[
             #text(fill: gradient.linear(rgb("#13A8C1"), rgb("#21C0AA")))[= Typst]
